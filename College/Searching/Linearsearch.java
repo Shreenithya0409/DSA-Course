@@ -19,3 +19,25 @@ public class Linearsearch {
         }
     }
 }
+//Using Strings
+public class Linearsearch {
+
+    public static int LS(String nums[],String k){
+        for (int i = 0; i <nums.length; i++) {
+            if(k.equals(nums[i])){
+                return i;
+            }
+        }
+        return -1;
+    }
+    public static void main(String[] args) {
+        String n[]={"idli","Dosa","Poori"};
+        String k="Chai";
+        int ind=LS(n, k);
+        if (ind==-1) {
+            System.out.println("Key Not Found");
+        } else {
+            System.out.println("KEY Found at Position: "+ind);
+        }
+    }
+}
